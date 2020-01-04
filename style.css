@@ -1,0 +1,95 @@
+@import url("https://fonts.googleapis.com/css?family=Cinzel|Cormorant+Garamond&display=swap");
+body {
+  font-family: "Cinzel", serif;
+  text-align: center;
+}
+
+#img-div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+a {
+  text-decoration: none;
+}
+
+#con {
+  font-family: "Cormorant Garamond", serif;
+  font-size: 1.5em;
+  text-align: justify;
+  padding: 0 20vh 0 20vh;
+}
+.sign {
+  width: 30vw;
+  height: auto;
+}
+#breaker {
+  
+  width: 100px; /* Change it accordingly */
+  margin: auto;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  border-top: 5px solid #0d2604;
+}
+#image {
+  display: block;
+  max-width: 100%;
+}
+
+#tag {
+  text-align: center;
+  align-self: center;
+  margin: 0 5vh 0 5vh;
+  font-size: 4em;
+}
+@media (max-width: 1250px) {
+  #image {
+    max-width: 300px;
+    height: auto;
+  }
+}
+.wrapper {
+  display: flex;
+  flex-flow: row no-wrap;
+}
+@media (max-width: 700px) {
+  #tag {
+    margin: 0 1.3vh 0 1.3vh;
+    font-size: 2em;
+  }
+}
+
+@media (max-width: 560px) {
+  .wrapper {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+
+  #con {
+    font-size: 1em;
+    padding: 0 1vh 0 1vh;
+  }
+  #image {
+    margin-left: 8vh;
+    max-width: 70%;
+    align-self: center;
+  }
+}
+
+@media (max-width: 250px) {
+  #image {
+    margin-left: 2vh;
+  }
+  #title {
+    font-size: 1.5em;
+  }
+  #tag {
+    font-size: 1em;
+  }
+  figcaption {
+    font-size: x-small;
+  }
+}
+@-ms-viewport {
+  width: device-width;
+}
